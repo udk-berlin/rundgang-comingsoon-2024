@@ -1,4 +1,4 @@
-import Comingsoon from './comingsoon.server';
+import ComingSoon from './comingSoon/comingSoon.server';
 
 export type LandingPageProps = {
   params: { locale: string };
@@ -6,5 +6,5 @@ export type LandingPageProps = {
 };
 
 export default function LandingPage({ params: { locale } }: LandingPageProps) {
-  return <Comingsoon locale={locale} />;
+  return <ComingSoon locale={locale} />;
 }
