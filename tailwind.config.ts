@@ -11,9 +11,10 @@ const config: Config = {
     screens: {
       xl: '1921px',
       lg: '1920px',
-      md: '1200px',
-      sm: '1000px',
-      xs: '600px',
+      md: '1460px',
+      sm: '995px',
+      xs: '762px',
+      xxs: '450px',
     },
     colors: {
       initial: '#000',
@@ -25,22 +26,29 @@ const config: Config = {
       white: '#fff',
     },
     fontSize: {
+      '2xl': [
+        '6rem',
+        {
+          letterSpacing: '1',
+          lineHeight: '1',
+        },
+      ],
       xl: [
-        '96px',
+        '4rem',
         {
           letterSpacing: '1',
           lineHeight: '1',
         },
       ],
       lg: [
-        '30px',
+        '3rem',
         {
           letterSpacing: '1',
           lineHeight: '1',
         },
       ],
       md: [
-        '24px',
+        '2.5rem',
         {
           letterSpacing: '1',
           lineHeight: '1',
@@ -83,13 +91,16 @@ const config: Config = {
       height: {
         sm: '35px',
         md: '50px',
+        footer: '4rem',
+        header: '4rem',
+        content: 'calc(100vh - 8rem)',
       },
       borderRadius: {
         md: '4px',
       },
       borderWidth: {
-        sm: '2px',
-        md: '4px',
+        sm: '1px',
+        md: '2px',
       },
       spacing: {
         'gutter-xxs': '5px',
