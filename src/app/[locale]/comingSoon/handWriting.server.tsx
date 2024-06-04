@@ -7,7 +7,7 @@ export default function ComingSoonHandWriting() {
 
   useEffect(() => {
     const timer = setInterval(() => {
-      if (currentIndex === 2) {
+      if (currentIndex === 8) {
         setCurrentIndex(1);
       } else {
         setCurrentIndex(currentIndex + 1);

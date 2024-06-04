@@ -3,7 +3,7 @@ import { getMessages } from '@/config';
 export default async function ComingSoonInfo({ locale }: { locale: string }) {
   const t = await getMessages(locale);
   return (
-    <div className="flex flex-col items-center justify-center pt-[2rem] text-center xs:pt-[0rem]">
+    <div className="flex flex-col items-center justify-center pt-[3rem] text-center xs:pt-[2rem]">
       <p>{t.text}</p>
       <p>
         &rarr;{' '}
