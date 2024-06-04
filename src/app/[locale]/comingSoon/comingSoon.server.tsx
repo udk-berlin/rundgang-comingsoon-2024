@@ -11,10 +11,9 @@ export default async function ComingSoon({ locale }: { locale: string }) {
   );
 }
 
-
 function ComingSoonContainer({ children }: { children: ReactNode }) {
   return (
-    <div className="mx-[2rem] min-h-[calc(100vh-8rem-5rem)] h-[calc(100vh-8rem-5rem)] flex flex-col items-center justify-center">
+    <div className="mx-[2rem] flex h-[calc(100vh-8rem-5rem)] min-h-[calc(100vh-8rem-5rem)] flex-col items-center justify-center">
       {children}
     </div>
   );
