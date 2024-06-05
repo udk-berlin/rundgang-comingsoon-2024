@@ -56,3 +56,11 @@ body {
   color: rgb(var(--secondary)) !important;
   background-color: rgb(var(--primary)) !important;
 }
+
+.break-word {
+  word-break: break-word;
+}
+
+/*br {*/
+/*  display: inline-block !important;*/
+/*}*/

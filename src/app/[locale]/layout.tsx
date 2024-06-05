@@ -32,7 +32,7 @@ export default async function RootLayout({
   return (
     <html lang={locale} className="bg-primary">
       <body
-        className={`${jungka.className} ${jungka.variable} ${noto.variable} h-full-screen min-h-full-screen max-h-screen overflow-hidden rounded border-sm radius-md`}
+        className={`${jungka.className} ${jungka.variable} ${noto.variable} h-full-screen min-h-full-screen radius-md max-h-screen overflow-hidden rounded border-sm`}
       >
         <Header locale={locale} />
         <main>{children}</main>

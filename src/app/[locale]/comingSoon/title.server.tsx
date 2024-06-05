@@ -10,18 +10,20 @@ export default async function ComingSoonTitle({ locale }: ComingSoonProps) {
 
   return (
     <ComingSoonInfoTitleContainer>
-      <ResponsiveH1 className="text-end font-medium" textSize="xl">
+      <ResponsiveH1 className="text-end font-bold" textSize="xl">
         {t.title}
       </ResponsiveH1>
       <div>
         <ResponsiveBr textSize="xl" />
         <ResponsiveBr className="xxs:hidden" textSize="xl" />
-        <ResponsiveH2 textSize="xl">{t.date}</ResponsiveH2>
+        <ResponsiveH2 className="break-word font-bold" textSize="xl">
+          {t.date}
+        </ResponsiveH2>
       </div>
     </ComingSoonInfoTitleContainer>
   );
 }
 
 function ComingSoonInfoTitleContainer({ children }: { children: ReactNode }) {
-  return <div className="flex justify-center">{children}</div>;
+  return <div className="flex justify-center ">{children}</div>;
 }
