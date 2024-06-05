@@ -15,10 +15,7 @@ export default async function ComingSoonTitle({ locale }: ComingSoonProps) {
       </ResponsiveH1>
       <div>
         <ResponsiveBr textSize="xl" />
-        <ResponsiveBr
-          className="xs:hidden"
-          textSize="xl"
-        />
+        <ResponsiveBr className="xxs:hidden" textSize="xl" />
         <ResponsiveH2 textSize="xl">{t.date}</ResponsiveH2>
       </div>
     </ComingSoonInfoTitleContainer>

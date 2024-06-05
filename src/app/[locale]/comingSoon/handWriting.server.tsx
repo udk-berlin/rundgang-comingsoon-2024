@@ -15,6 +15,7 @@ export default function ComingSoonHandWriting() {
     }, 5000); // clearing interval
     return () => clearInterval(timer);
   });
+
   return (
     <div className="relative">
       {[1, 2, 3, 4, 5, 6, 7, 8].map((number) => (

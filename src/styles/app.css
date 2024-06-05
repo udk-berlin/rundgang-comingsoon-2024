@@ -28,6 +28,7 @@
   --primary: 255, 255, 255;
   --secondary: 0, 0, 0;
 }
+
 :root[data-theme='light'] {
   --primary: 0, 0, 0;
   --secondary: 255, 255, 255;
@@ -55,9 +56,3 @@ body {
   color: rgb(var(--secondary)) !important;
   background-color: rgb(var(--primary)) !important;
 }
-
-/*@layer utilities {*/
-/*    .text-balance {*/
-/*        text-wrap: balance;*/
-/*    }*/
-/*}*/

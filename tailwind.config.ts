@@ -1,6 +1,7 @@
 import type { Config } from 'tailwindcss';
 
 const config: Config = {
+  darkMode: 'selector',
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -11,10 +12,10 @@ const config: Config = {
     screens: {
       xl: '1921px',
       lg: '1920px',
-      md: '1460px',
-      sm: '995px',
-      xs: '762px',
-      xxs: '450px',
+      md: '1463px',
+      sm: '998px',
+      xs: '764px',
+      xxs: '648px',
     },
     colors: {
       initial: '#000',
@@ -110,10 +111,11 @@ const config: Config = {
         'gutter-lg': '50px',
         border: '2px',
       },
-      gridTemplateColumns: {
-        footer: 'repeat(3,minmax(200px, 1fr))',
-        header: 'repeat(5,minmax(200px, 1fr))',
-        headerinfo: 'minmax(100px, 1fr) 50px 50px 50px',
+      gridTemplateRows: {
+        'coming-soon-sm':
+          'calc(0.3 * calc(100vh - 8rem)) calc(0.4 * calc(100vh - 8rem)) calc(0.3 * calc(100vh - 8rem))',
+        'coming-soon-md':
+          'calc(0.25 * calc(100vh - 8rem)) calc(0.5 * calc(100vh - 8rem)) calc(0.25 * calc(100vh - 8rem))',
       },
       fontFamily: {
         jungka: ['var(--font-jungka)', 'var(--font-noto)', 'sans-serif'],
