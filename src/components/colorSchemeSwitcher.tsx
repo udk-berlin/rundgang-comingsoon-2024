@@ -42,7 +42,7 @@ export const ColorSchemeSwitcher = () => {
       <button
         onClick={toggleDarkMode}
         aria-label="dark mode"
-        className="bg-primary p-[0.25rem] hover:bg-highlight"
+        className="bg-primary p-[0.25rem] sm:hover:bg-highlight"
       >
         <svg
           width="100%"

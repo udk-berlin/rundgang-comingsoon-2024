@@ -2,17 +2,19 @@ import ComingSoonHandWriting from '@/app/comingSoon/handWriting.server';
 import { ReactNode } from 'react';
 import ComingSoonInfo from '@/app/comingSoon/info.server';
 import ComingSoonTitle from '@/app/comingSoon/title.server';
+import { getMessages } from '@/config';
 
 export type ComingSoonProps = {
   locale: string;
 };
 
 export default async function ComingSoon({ locale }: ComingSoonProps) {
+  const t = await getMessages(locale);
   return (
     <ComingSoonContainer>
-      <ComingSoonInfo locale={locale} />
+      <ComingSoonInfo t={t} />
       <ComingSoonHandWriting />
-      <ComingSoonTitle locale={locale} />
+      <ComingSoonTitle t={t} />
     </ComingSoonContainer>
   );
 }

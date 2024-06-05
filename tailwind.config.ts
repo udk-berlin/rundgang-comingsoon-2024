@@ -56,7 +56,7 @@ const config: Config = {
         },
       ],
       sm: [
-        '16px',
+        '2rem',
         {
           letterSpacing: '1',
           lineHeight: '1',
@@ -64,18 +64,18 @@ const config: Config = {
         },
       ],
       xs: [
-        '14px',
+        '1rem',
         {
           letterSpacing: '1',
-          lineHeight: '1',
+          lineHeight: '1.4',
           fontWeight: '400',
         },
       ],
       xxs: [
-        '12px',
+        '0.8rem',
         {
           letterSpacing: '1',
-          lineHeight: '1',
+          lineHeight: '1.3',
           fontWeight: '400',
         },
       ],
@@ -113,7 +113,7 @@ const config: Config = {
       },
       gridTemplateRows: {
         'coming-soon-sm':
-          'calc(0.3 * calc(100vh - 8rem)) calc(0.4 * calc(100vh - 8rem)) calc(0.3 * calc(100vh - 8rem))',
+          'calc(0.325 * calc(100vh - 8rem)) calc(0.35 * calc(100vh - 8rem)) calc(0.325 * calc(100vh - 8rem))',
         'coming-soon-md':
           'calc(0.25 * calc(100vh - 8rem)) calc(0.5 * calc(100vh - 8rem)) calc(0.25 * calc(100vh - 8rem))',
       },

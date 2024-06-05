@@ -1,9 +1,6 @@
-import { getMessages } from '@/config';
-
-export default async function ComingSoonInfo({ locale }: { locale: string }) {
-  const t = await getMessages(locale);
+export default async function ComingSoonInfo({ t }: { t: any }) {
   return (
-    <div className="flex flex-col items-center justify-center text-center">
+    <div className="flex flex-col items-center justify-center text-center text-xxs xs:text-xs">
       <p>{t.text}</p>
       <p>
         &rarr;{' '}

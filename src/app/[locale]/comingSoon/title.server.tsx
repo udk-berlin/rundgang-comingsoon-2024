@@ -1,26 +1,39 @@
-import { ReactNode } from 'react';
-import { ResponsiveH1 } from '@/components/html/h1';
-import { ResponsiveH2 } from '@/components/html/h2';
-import { ComingSoonProps } from '@/app/comingSoon/comingSoon.server';
-import { getMessages } from '@/config';
-import { ResponsiveBr } from '@/components/html/br';
+'use client';
 
-export default async function ComingSoonTitle({ locale }: ComingSoonProps) {
-  const t = await getMessages(locale);
+import { ReactNode, useEffect, useRef, useState } from 'react';
+import { ResponsiveH2 } from '@/components/html/h2';
+
+export default function ComingSoonTitle({ t }: { t: any }) {
+  const refContainer = useRef(null);
+  const [dimensions, setDimensions] = useState({
+    width: 0,
+    height: 0,
+  });
+
+  useEffect(() => {
+    if (refContainer.current) {
+      setDimensions({
+        width: refContainer.current.offsetWidth,
+        height: refContainer.current.offsetHeight,
+      });
+    }
+  }, []);
 
   return (
-    <ComingSoonInfoTitleContainer>
-      <ResponsiveH1 className="text-end font-bold" textSize="xl">
+    <div className="flex items-start justify-center">
+      <div
+        ref={refContainer}
+        className="text-end text-sm font-bold xs:text-md sm:text-xl md:text-2xl"
+      >
         {t.title}
-      </ResponsiveH1>
+      </div>
       <div>
-        <ResponsiveBr textSize="xl" />
-        <ResponsiveBr className="xxs:hidden" textSize="xl" />
+        <div style={{ height: `${dimensions.height}px` }}></div>
         <ResponsiveH2 className="break-word font-bold" textSize="xl">
           {t.date}
         </ResponsiveH2>
       </div>
-    </ComingSoonInfoTitleContainer>
+    </div>
   );
 }
 
