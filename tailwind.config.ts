@@ -94,7 +94,7 @@ const config: Config = {
         md: '50px',
         footer: '4rem',
         header: '4rem',
-        content: 'calc(100vh - 8rem)',
+        content: 'calc(100dvh - 8rem)',
       },
       borderRadius: {
         md: '4px',
@@ -113,9 +113,9 @@ const config: Config = {
       },
       gridTemplateRows: {
         'coming-soon-sm':
-          'calc(0.325 * calc(100vh - 8rem)) calc(0.35 * calc(100vh - 8rem)) calc(0.325 * calc(100vh - 8rem))',
+          'calc(0.325 * calc(100dvh - 8rem)) calc(0.35 * calc(100dvh - 8rem)) calc(0.325 * calc(100dvh - 8rem))',
         'coming-soon-md':
-          'calc(0.25 * calc(100vh - 8rem)) calc(0.5 * calc(100vh - 8rem)) calc(0.25 * calc(100vh - 8rem))',
+          'calc(0.25 * calc(100dvh - 8rem)) calc(0.5 * calc(100dvh - 8rem)) calc(0.25 * calc(100dvh - 8rem))',
       },
       fontFamily: {
         jungka: ['var(--font-jungka)', 'var(--font-noto)', 'sans-serif'],

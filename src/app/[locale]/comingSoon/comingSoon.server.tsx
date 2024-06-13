@@ -21,8 +21,8 @@ export default async function ComingSoon({ locale }: ComingSoonProps) {
 
 function ComingSoonContainer({ children }: { children: ReactNode }) {
   return (
-    <div className="min-h-content max-h-content mx-[2rem] grid h-content grid-rows-coming-soon-sm sm:grid-rows-coming-soon-md">
+    <main className="min-h-content max-h-content mx-[2rem] grid h-content grid-rows-coming-soon-sm overflow-hidden sm:grid-rows-coming-soon-md">
       {children}
-    </div>
+    </main>
   );
 }

@@ -1,6 +1,6 @@
 export default async function ComingSoonInfo({ t }: { t: any }) {
   return (
-    <div className="flex flex-col items-center justify-center text-center text-xxs xs:text-xs">
+    <div className="flex flex-col items-center justify-end text-center text-xxs xs:text-xs sm:justify-center">
       <p>{t.text}</p>
       <p>
         &rarr;{' '}
